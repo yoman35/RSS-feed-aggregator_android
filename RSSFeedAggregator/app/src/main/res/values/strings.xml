@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RSS feed aggregator</string>
+    <string name="splash_logo">Logo</string>
+    <string name="version_intro">version</string>
+    <string name="intent_user">intent_user</string>
+
 </resources>
