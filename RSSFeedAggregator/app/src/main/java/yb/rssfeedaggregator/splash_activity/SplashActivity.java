@@ -30,6 +30,8 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
     private ImageView mLogo;
     private TextView mVersion;
     private DotProgressBar mProgress;
+    private TextView mWelcome;
+    private TextView mTitle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +42,13 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
         mLogo = (ImageView) findViewById(R.id.logo);
         mVersion = (TextView) findViewById(R.id.version);
         mProgress = (DotProgressBar) findViewById(R.id.dot_progress_bar);
+        mWelcome = (TextView) findViewById(R.id.welcome);
+        mTitle = (TextView) findViewById(R.id.app_name);
         initLogo();
         initVersion();
         execute();
     }
 
-    /**
-     * Test
-     */
     private void execute() {
         new Thread(new Runnable() {
             @Override
@@ -89,10 +90,13 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
 
     private void removeLogo() {
         Animation logoAnimation = AnimationUtils.loadAnimation(this, R.anim.splash_logo_remove);
+        Animation fadeOut = AnimationUtils.loadAnimation(this, R.anim.fade_out);
         logoAnimation.setAnimationListener(this);
         mLogo.startAnimation(logoAnimation);
-        mLogo.setVisibility(View.GONE);
-
+        mWelcome.startAnimation(fadeOut);
+        mVersion.startAnimation(fadeOut);
+        mProgress.startAnimation(fadeOut);
+        mTitle.startAnimation(fadeOut);
     }
 
     @Override
@@ -118,6 +122,8 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
 
     @Override
     public void onAnimationEnd(Animation animation) {
+        mWelcome.setVisibility(View.GONE);
+        mLogo.setVisibility(View.GONE);
         mProgress.setVisibility(View.GONE);
         Intent i = new Intent(me, MainActivity.class);
         MySharedPreferences sp = MyApplication.getInstance().getSP();

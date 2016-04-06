@@ -1,10 +1,6 @@
 package yb.rssfeedaggregator.utils;
 
 import android.app.Application;
-import android.content.Context;
-import android.widget.ImageView;
-
-import com.squareup.picasso.Picasso;
 
 /**
  * Application singleton to help context resolution
@@ -28,10 +24,6 @@ public class MyApplication extends Application {
 
     public MySharedPreferences getSP() {
         return mSP;
-    }
-
-    public void loadBitmapViaPicasso(Context context, String url, ImageView holder) {
-        Picasso.with(context).load(url).into(holder);
     }
 
 }

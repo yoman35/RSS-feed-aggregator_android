@@ -15,6 +15,7 @@
     tools:context="yb.rssfeedaggregator.splash_activity.SplashActivity">
 
     <TextView
+        android:id="@+id/app_name"
         style="@style/SplashScreenAppNameTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,20 +28,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:contentDescription="@string/splash_logo"
         android:src="@drawable/feed_logo_yellow_flat" />
+
+    <TextView
+        android:id="@+id/welcome"
+        style="@style/SplashScreenWelcomeTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/welcome" />
 
     <com.github.silvestrpredko.dotprogressbar.DotProgressBar
         android:id="@+id/dot_progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         custom:amount="4"
         custom:duration="500"
         custom:endColor="@color/colorPrimaryLight"
-        custom:startColor="@color/colorPrimaryDark"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        custom:startColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/version"

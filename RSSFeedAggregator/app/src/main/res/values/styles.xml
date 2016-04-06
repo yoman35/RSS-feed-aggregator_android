@@ -12,11 +12,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="SplashScreenAppNameTheme" parent="AppTheme">
         <item name="android:textSize">@dimen/text_title_big</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="SplashScreenWelcomeTheme" parent="SplashScreenAppNameTheme">
+        <item name="android:textSize">@dimen/text_title_biggest</item>
+    </style>
+
     <dimen name="text_title_big">24sp</dimen>
+    <dimen name="text_title_biggest">30sp</dimen>
 </resources>

@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Aggregateur de flux RSS</string>
+    <string name="settings">Options</string>
+    <string name="version_intro">version</string>
+    <string name="splash_logo" translatable="false">Logo</string>
+    <string name="welcome">BIENVENUE</string>
+    <string name="log_in">SE CONNECTER</string>
 </resources>

@@ -12,7 +12,6 @@ import yb.rssfeedaggregator.models.User;
  *
  * @version 1.0
  */
-@SuppressWarnings("unused")
 public class MySharedPreferences {
 
     public static final String

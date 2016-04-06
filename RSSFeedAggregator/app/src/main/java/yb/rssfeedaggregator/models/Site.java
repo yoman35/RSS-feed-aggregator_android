@@ -4,14 +4,8 @@ import android.graphics.Bitmap;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Site model
- *
- * Created by YomanHD on 25/03/2016.
- */
 public class Site implements Parcelable {
 
     String name;
@@ -28,7 +22,7 @@ public class Site implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
         dest.writeString(rootUrl);
-        //TODO: logo
+        dest.writeParcelable(logo, flags);
         dest.writeList(articles);
     }
 
@@ -48,7 +42,7 @@ public class Site implements Parcelable {
     public Site(Parcel in) {
         name = in.readString();
         rootUrl = in.readString();
-        //TODO: logo
+        logo = in.readParcelable(Bitmap.class.getClassLoader());
         in.readTypedList(articles, Article.CREATOR);
     }
 }
