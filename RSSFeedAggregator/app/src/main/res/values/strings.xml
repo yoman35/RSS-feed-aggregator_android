@@ -3,5 +3,13 @@
     <string name="splash_logo">Logo</string>
     <string name="version_intro">version</string>
     <string name="intent_user">intent_user</string>
+    <string name="login">LOG IN</string>
+    <string name="email">Ex: jean@domain.com</string>
+    <string name="login_dialog_view_group">login_dialog_view_group</string>
+    <string name="login_title">Something went wrong :/</string>
+    <string name="login_content">Layout cannot be inflated. Our deep apologies for that.</string>
+    <string name="email_title">EMAIL</string>
+    <string name="password_title">PASSWORD</string>
+    <string name="connect_to_account">Connect with your account</string>
 
 </resources>
