@@ -3,7 +3,7 @@
     android:duration="1500"
     android:fromXScale="0.0"
     android:fromYScale="0.0"
-    android:interpolator="@android:interpolator/overshoot"
+    android:interpolator="@android:interpolator/bounce"
     android:pivotX="50%"
     android:pivotY="50%"
     android:toXScale="1.0"

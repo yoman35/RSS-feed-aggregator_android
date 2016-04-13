@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#60200e</color>
     <color name="colorPrimaryLight">#f8f3c0</color>
     <color name="colorAccent">#60200e</color>
+    <color name="divider">#B6B6B6</color>
 
 </resources>

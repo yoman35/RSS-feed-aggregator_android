@@ -5,11 +5,6 @@ import android.os.Parcelable;
 
 import java.util.List;
 
-/**
- * Category model
- *
- * Created by YomanHD on 25/03/2016.
- */
 public class Category implements Parcelable {
 
     String name;

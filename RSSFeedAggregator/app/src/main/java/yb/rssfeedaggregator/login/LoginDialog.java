@@ -13,7 +13,8 @@ import android.widget.Button;
 
 import yb.rssfeedaggregator.R;
 
-public class LoginDialog extends DialogFragment implements DialogInterface.OnClickListener, DialogInterface.OnShowListener {
+public class LoginDialog extends DialogFragment
+        implements DialogInterface.OnClickListener, DialogInterface.OnShowListener {
 
     private AlertDialog mAlertDialog;
 

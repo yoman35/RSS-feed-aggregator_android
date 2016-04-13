@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yb.rssfeedaggregator.main_activity.NotLoggedInFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/advice_log_in"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <info.hoang8f.widget.FButton
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_small"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_small"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_small"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_small"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/log_in"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        fbutton:buttonColor="@color/colorPrimary"
+        fbutton:cornerRadius="0dp"
+        fbutton:shadowColor="@color/colorPrimaryDark"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="3dp"
+        android:onClick="onClickOnConnectButton"/>
+
+</RelativeLayout>
