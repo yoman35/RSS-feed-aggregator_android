@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_id": "rssfeedaggregator-2d0f1",
+    "project_number": "295539691647",
+    "name": "RSSFeedAggregator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295539691647:android:c143cc35e1b14502",
+        "client_id": "android:yb.rssfeedaggregator",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "yb.rssfeedaggregator",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-48158820-3"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -19,6 +19,7 @@
         android:paddingStart="@dimen/activity_horizontal_margin">
 
         <TextView
+            android:id="@+id/change_user"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
@@ -28,7 +29,8 @@
             android:drawableStart="@drawable/ic_add_circle_outline_white_18dp"
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/change_user"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -43,6 +45,7 @@
                 android:clickable="true"
                 android:contentDescription="@string/back"
                 android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="onClickOnBackButton"
                 android:src="@drawable/ic_arrow_back_white_24dp" />
 
         </RelativeLayout>
@@ -60,6 +63,7 @@
         android:gravity="bottom">
 
         <info.hoang8f.widget.FButton
+            android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -77,7 +81,8 @@
             fbutton:cornerRadius="0dp"
             fbutton:shadowColor="@color/colorPrimaryDark"
             fbutton:shadowEnabled="true"
-            fbutton:shadowHeight="3dp" />
+            fbutton:shadowHeight="3dp"
+            android:onClick="onClickOnConnectButton"/>
 
     </RelativeLayout>
 

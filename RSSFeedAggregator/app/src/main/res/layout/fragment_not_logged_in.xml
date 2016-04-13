@@ -34,6 +34,7 @@
         fbutton:cornerRadius="0dp"
         fbutton:shadowColor="@color/colorPrimaryDark"
         fbutton:shadowEnabled="true"
-        fbutton:shadowHeight="3dp" />
+        fbutton:shadowHeight="3dp"
+        android:onClick="onClickOnConnectButton"/>
 
 </RelativeLayout>

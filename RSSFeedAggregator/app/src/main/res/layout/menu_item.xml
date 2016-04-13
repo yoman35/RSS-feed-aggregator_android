@@ -4,7 +4,8 @@
     android:layout_height="?attr/actionBarSize"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/root_view">
 
     <LinearLayout
         android:layout_width="match_parent"
